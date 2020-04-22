@@ -1,0 +1,14 @@
+server:
+  port: 8887
+
+eureka:
+  instance:
+    hostname: localhost
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
