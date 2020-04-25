@@ -30,7 +30,7 @@ dependencies {
 
 dependencyManagement {
 	imports {
-		mavenBom("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR2")
+		mavenBom("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR3")
 	}
 }
 
