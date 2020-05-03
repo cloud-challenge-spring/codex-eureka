@@ -3,13 +3,14 @@ spring:
   application:
     name: codex-eureka
 
-logging.level.org.springframework: INFO
-
----
-
-spring:
-  profiles: dev
-
   cloud:
     config:
       uri: http://config-server:8888
+
+  boot:
+    admin:
+      client:
+        url: http://admin-server:8079
+
+logging.level.org.springframework: INFO
+
